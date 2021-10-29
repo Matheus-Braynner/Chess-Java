@@ -22,14 +22,14 @@ public abstract class ChessPiece extends Piece {
 		return moveCount;
 	}
 	
-	public void increaseMoveCount() {
+	protected void increaseMoveCount() {
 		moveCount++;
 	}
-	
-	public void decreaseMoveCount() {
-		moveCount++;
+
+	protected void decreaseMoveCount() {
+		moveCount--;
 	}
-	
+
 	public ChessPosition getChessPosition() {
 		return ChessPosition.fromPosition(position);
 	}
